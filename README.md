@@ -21,13 +21,12 @@ Examples:
 - PHP
 - SQL DataBases
 
-# (0.01 Github Commands)
-- Ls/dir  - used to 'list' contents of the current working directory
-- git status - status command on your desired directory
--  Cd - acronym for '**Change Directory** 
-- Executing CD will change the terminal sessions current working directory to the passed directory argument
-- git-init - Create an empty Git repository or reinitialize an existing one
-- git add < file > Adding specific file to a Git Repository
-- git add . Adding all modified files to a git Repository
-- git commit -m < text  > - captures a snapshot of the project's currently staged changes -m is an Message that we put in " ", like "(Initial Commit)"
-- git push - Pushing into repository branch all changes
+# (0.01 GitBash Commands)
+- Ls/dir 
+- git status 
+-  Cd 
+- git-init 
+- git add < file >
+- git add .
+- git commit -m < text  > 
+- git push 
