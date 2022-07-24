@@ -7,7 +7,7 @@ I'm typing this file in order to remind myself and see usage of technologies fro
 ***Front-End 
 Executed by client/user browser*** 
 Examples:  
-- HTML
+- HTML   :)
 - CSS
 - JavaScript
 - SVG - Scallable Vector Graphics
