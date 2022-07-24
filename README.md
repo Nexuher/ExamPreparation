@@ -22,10 +22,10 @@ Examples:
 - SQL DataBases
 
 # (0.01 GitBash Commands)
-- Ls/dir 
+- Ls/dir  
 - git status 
 -  Cd 
-- git-init 
+- git init 
 - git add < file >
 - git add .
 - git commit -m < text  > 
