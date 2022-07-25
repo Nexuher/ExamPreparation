@@ -1,7 +1,12 @@
 # Main usage of this README
 I'm typing this file in order to learn and see usage of technologies from: 
 - **Repetytorium + Testy Klasyfikacja EE.09 / Inf.03/ Technik Informatyk/Programista**
--  See usage of **HTML/PHP/JavaScript/CSS/SCSS** code in progress while learning alone from index.html code in ExamPreparation repositorium.
+-  See usage of **HTML/PHP/JavaScript/CSS/SCSS/C++/SQL** code in progress while learning alone from index.html code in ExamPreparation repositorium.
+- While learning from book referenced above, I'm using 
+- Visual Studio Code, Visual Studio 2022
+- GitBash
+- StackEdit for ReadMe modifying informations below
+
 # 2.1 - Web Application Notes
 ## Website technologies
 ***Front-End 
