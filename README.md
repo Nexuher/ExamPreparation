@@ -1,5 +1,5 @@
 # Main usage of this README
-I'm typing this file in order to remind myself and see usage of technologies from: 
+I'm typing this file in order to learn and see usage of technologies from: 
 - **Repetytorium + Testy Klasyfikacja EE.09 / Inf.03/ Technik Informatyk/Programista**
 -  See usage of **HTML/PHP/JavaScript/CSS/SCSS** code in progress while learning alone from index.html code in ExamPreparation repositorium.
 # 2.1 - Web Application Notes
