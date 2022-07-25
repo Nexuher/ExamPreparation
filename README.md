@@ -5,29 +5,29 @@ I'm typing this file in order to remind myself and see usage of technologies fro
 # 2.1 - Web Application Notes
 ## Website technologies
 ***Front-End 
-Executed by client/user browser*** 
+Executed by client/user browser // Explicit Code (jawny)*** 
 Examples:  
-- HTML
+- HTML (ang. HyperText Markup Language)
 - CSS
 - JavaScript
 - SVG - Scallable Vector Graphics
 
 ***Back-End
-Executed by Server*** 
+Executed by Server // Hidden Code (ukryty)*** 
 Examples:  
 - .NET
 - Java
 - Python
-- PHP
-- SQL DataBases
+- PHP (ang. PHP Hypertext Processor)
+- SQL (ang. Structured Query Language)
 
 # (0.01 Github Commands)
 - Ls/dir 
 - git status 
--  Cd 
+- Cd 
 - git-init 
 - git add < file >
 - git add .
-- git commit -m < text  > 
+- git commit -m < text > 
 - git push 
 # 2.2 HTML Document
