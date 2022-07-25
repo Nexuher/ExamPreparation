@@ -5,22 +5,23 @@ I'm typing this file in order to remind myself and see usage of technologies fro
 # 2.1 - Web Application Notes
 ## Website technologies
 ***Front-End 
-Executed by client/user browser // Explicit Code (jawny)*** 
+Executed by client/user browser Explicit Code*** 
 Examples:  
-- HTML (ang. HyperText Markup Language)
+- HTML
 - CSS
 - JavaScript
 - SVG - Scallable Vector Graphics
 
 ***Back-End
-Executed by Server // Hidden Code (ukryty)*** 
+Executed by Server Hidden Code*** 
 Examples:  
 - .NET
 - Java
 - Python
-- PHP (ang. PHP Hypertext Processor)
-- SQL (ang. Structured Query Language)
-
+- PHP
+- SQL DataBases
+ # History of the development of hypertext languages
+![What Is HTML? Hypertext Markup Language Basics for Beginners](https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2021/10/html-historical-milestones.png)
 # (0.01 Github Commands)
 - Ls/dir 
 - git status 
@@ -28,6 +29,6 @@ Examples:
 - git-init 
 - git add < file >
 - git add .
-- git commit -m < text > 
+- git commit -m < text  > 
 - git push 
 # 2.2 HTML Document
