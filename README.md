@@ -44,10 +44,8 @@ Every pointer is limited by a < > tags as it's called.
 - 2.1 Web Technologies - is a normal text
 - /h1 is ending of a header 
 # Types of tags
-**Spared** - type of which we open an element of HTML f.e. 
- < title > and second is used to close it , </ title >
- **NonSpared** - type where we only use opening statement f.e
- < b > or < hr >
+ - **Spared** - type of which we open an element of HTML f.e.  // < title > and second is used to close it , </ title >
+- **NonSpared** - type where we only use opening statement f.e // < b > or < hr >
 # Definitions
 - **Declaration of File type** - Defined mostly by DTD standard (ang. Document Type Definition) in which we create website. There's 3 types of documents
 - **Strict**
@@ -74,4 +72,4 @@ All HTML Tags can be divided into groups:
 - Creates references
 - Divide website
 - Creates tables and Forms
-- - Adds Multimedia elements and API
+- Adds Multimedia elements and API
