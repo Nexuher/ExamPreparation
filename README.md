@@ -183,3 +183,4 @@ In newest version of HTML 5, changes have been introduced in relation to HTML 4.
 - - **range**,
 - Support for graphics on the site f.e **< svg> < canvas>**,
 - Multimedia support **< audio>** and **< video>**,
+# 2.4 Page splitting and data handling in HTML
