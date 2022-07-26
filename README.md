@@ -123,3 +123,30 @@ Part of loger text which includes **one or more sentences** making a certain log
 They divide website on logically divided parts by giving them specifical format, depending on used header. 
 - We're using < h1> to < h6> header, **the bigger the number, the smaller the text is**.
 # Lists
+Lists allow for creating **systematized groups of information**. We can use:
+- Lists unstructured **(pointed)**
+- Lists structured **(numbered)**
+# Numbered list (structured)
+In order to create numbered list, we have to use:
+- **< ol> </ ol>** which creates new element list.
+- Adding new element to the list is added by pointer:
+- **< li> Text inside </ li>** 
+
+Pointer < ol> has a type atribute allowing us for **describing the type of bullet point used in the list**
+- A - numbering according to capital letters
+- a - numbering according to lowercase letters
+- I - numbering according to large Roman numerals
+- i - numbering according to small Roman numerals
+- 1 - numbering by Roman numerals
+# Lists unstructured **(pointed)**
+In order to create unstructured list, we have to use:
+- **< ul> </ ul>** which creates new element list.
+- Adding new element to the list is added by pointer:
+- **< li> Text inside </ li>** 
+
+Pointer < ul> has a type atribute allowing us for **describing the type of bullet point used in the list**
+- Disc (default)
+- Circle
+- Square
+
+Beside Lists unstructured and pointed there's a possiblitity to create **nested lists**. Which is list with pointers, We can create it using combination of previously talked about tags.
