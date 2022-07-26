@@ -150,3 +150,36 @@ Pointer < ul> has a type atribute allowing us for **describing the type of bulle
 - Square
 
 Beside Lists unstructured and pointed there's a possiblitity to create **nested lists**. Which is list with pointers, We can create it using combination of previously talked about tags.
+# References (links)
+Job of references is **creating a connection of changing websites/files/subpage.**
+We have:
+- **References Absolute**: to website in URL Format
+- **Reference Relative:**  to a resource specified by an access path.
+
+Example of **Reference Absolute**:
+< a href="http://www.wsip.pl"> Text here < /a> 
+
+Example of **Reference Relative**:
+< a href="C:\WebsiteFolder\index.html"> Text here < /a> 
+
+References on website are shown as **active elements**.
+They are:
+- Default colour (blue)
+- They are underlined 
+- After pointing mouse at it or choosing link, colour of text is changed.
+# HTML 5
+In newest version of HTML 5, changes have been introduced in relation to HTML 4.01. The most important are:
+- ***New dividers***
+- - **< header>**,
+- - **< footer>**,
+- - **< nav>**,
+-  - **< article>**,
+-  - **< section>**,
+- ***Tag atributes to create forms:***
+- - **number**,
+- - **date**,
+- - **time**,
+- - **calendar**,
+- - **range**,
+- Support for graphics on the site f.e **< svg> < canvas>**,
+- Multimedia support **< audio>** and **< video>**,
