@@ -47,7 +47,7 @@ Every pointer is limited by a < > tags as it's called.
  - **Spared** - type of which we open an element of HTML f.e.  // < title > and second is used to close it , </ title >
 - **NonSpared** - type where we only use opening statement f.e // < b > or < hr >
 # Definitions
-- **Declaration of File type** - Defined mostly by DTD standard (ang. Document Type Definition) in which we create website. There's 3 types of documents
+- **Declaration of document type** - Defined mostly by DTD standard (ang. Document Type Definition) in which we create website. There's 3 types of documents
 - **Strict**
 - **Transitional**
 - **Frameset**
