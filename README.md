@@ -73,3 +73,53 @@ All HTML Tags can be divided into groups:
 - Divide website
 - Creates tables and Forms
 - Adds Multimedia elements and API
+
+# 2.3 Basic Tags of HTML Language
+**Edit and formatting tags: (At the start are things we put between <> tags to get specific effect.)**
+	
+- <b>b.tekst</b>
+- <i>i.tekst</i>
+- <u>u.tekst</u>
+- <s>s.tekst</s>
+- <mark>mark.tekst</mark>
+ - <em>em.tekst</em>
+- <sub>sub.tekst</sub>
+- <sup>sup.tekst</sup>
+- <strong>strong.tekst</strong>
+- <dfn>dfn.tekst</dfn>
+- <small>small.tekst</small>
+**Special editing document tags in HTML Document**
+- & quot; ---&quot;
+- & amp; --- &amp;
+- & plusmn;  ---&plusmn;
+- & sect;  ---&sect;
+- & euro;  ---&euro;
+- & lt;  ---&lt;
+- & gt;  ---&gt;
+# Tags editing line and block elements
+**Block elements** - Fragments which **cannot be put** next to eachother in the same line. F.e:
+**Line elements** - **can** be put next to each other
+- < h1 > - < h6 >
+- Paragraph < p >
+- vertical line - < hr>
+- Preformat block < pre>
+- Quote block < blockquote>
+- Divider < div>
+- Inventory tag < ol>, < ul>
+- fieldset < fieldset>
+- < figure>
+**To Line element:**
+- < span>
+- Short quote < q>
+- Creating a reference < a>
+
+# Breakline
+**< br>** is used to jump to next line, nothing else.
+# Paragraph
+Part of loger text which includes **one or more sentences** making a certain logical **whole of content or thought**.
+- Text creating a paragraph are placed inside of a < p> and< /p> tag.
+- Next paragraphs are placed **one after another.**
+# Headings
+They divide website on logically divided parts by giving them specifical format, depending on used header. 
+- We're using < h1> to < h6> header, **the bigger the number, the smaller the text is**.
+# Lists
