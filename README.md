@@ -226,8 +226,9 @@ Atributes of a table
 -  **Align** /  centering text horizontally in the cells
 - **bgcolor** / fill color
 # Forms
-The form is used to collect and send certain data for the purpose intended by the author.
-Data can be send to email or used in script by users or serwer side.
+The form is used to **collect and send certain data for the purpose intended by the author.**
+
+Data can be send to **email or used in script by users or serwer side.**
 We start < form> </ form>. 
 We can use: 
 - **< input>** / creating form fields\
@@ -236,3 +237,16 @@ We can use:
 - **< fieldset>** / framing cell form
 - **< legend>** / describtion of form cell
 - **< label>** / field label for the tag
+
+# 2.5 Color on Websites
+Color is an important parameter for presenting content on a website. 
+
+The choice of color palette not only determines the aesthetics of the sites, but also **determines its readability and accessibility**
+
+**Color is a visual impression created by the interaction of electromagnetic waves from the frequency band of visible light.**
+Color models describe specific colour pallets, to default colour pallets in graphics and websites we describe as:
+
+ 1. RGB model - Colour made from 3 basic colours, **Red, Green, Blue**
+ 2. HSL model - Each colour can be described by 3 atributes Shade, Saturation, Brightness.
+ 3. CMYK model - Colour made from 4 colour Cyan,Magenta,Yellow,Black
+ 4. HVS model - Colour made from 3 parametres - Hue,Saturation,Value
