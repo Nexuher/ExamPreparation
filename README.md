@@ -184,3 +184,55 @@ In newest version of HTML 5, changes have been introduced in relation to HTML 4.
 - Support for graphics on the site f.e **< svg> < canvas>**,
 - Multimedia support **< audio>** and **< video>**,
 # 2.4 Page splitting and data handling in HTML
+From html 4.01 standard to splitting a page into functional parts, we've used elements called **blocks, boxes or conteners.**
+
+Elements between < div> </ div> are easy to fill with, load specific subpage and use inside or outside formatting.
+
+One of many ways to define formatting of div are: 
+- **Class** / CSS class,
+- **Id** / ID of an element,
+- **Title** / Text to show after pointing mouse at it,
+- **Align** / Centering element content horizontally
+- **dir** / describing text inside of a block
+# Sections
+With HTML 5, new block elements have been introduced which can take over role of div, which specifies role of specific parts of HyperText.
+- < article >
+- < header>
+- < nav>
+- < section>
+- < aside>
+-  < footer>
+# Headers Sheet
+![](https://scontent-vie1-1.xx.fbcdn.net/v/t39.30808-6/218370203_207781431263554_6134652891722567958_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=TKw565fzdYwAX8eNaUi&_nc_ht=scontent-vie1-1.xx&oh=00_AT87rLNk0HlZ0PPDtK5fmaCOFUC-xC50WHkxOhsnjsXnDQ&oe=62E64A74)
+# Tables
+Tables allow for **easy and clear presentation** of information, text, photos or graphics in websites. 
+
+They are used to show data in **tabular(tabelarycznej)** form
+- **< table> </ table>** / tags describing area of a table
+- **< tr> </ tr>** /  row of a table
+- **< td> </ td>**  / cell of a table
+- **< th> </ th>** / column header cell
+- **< caption> </ caption>** Title of a table
+
+Atributes of a table
+- **Colspan** / merger of columns
+- **Rowspan** / merger of rows
+- **Cellpadding** / margin of cell
+- **Cellspacing** / cell spacing size
+- **Border** / Size of < table>, < tr>, < td>
+- **Width** / width of table tr td
+- **Height** / size of table tr td
+- ** Valign** / centering text vertically in the cells
+-  **Align** /  centering text horizontally in the cells
+- **bgcolor** / fill color
+# Forms
+The form is used to collect and send certain data for the purpose intended by the author.
+Data can be send to email or used in script by users or serwer side.
+We start < form> </ form>. 
+We can use: 
+- **< input>** / creating form fields\
+- **< select>** / creating drop-down lists (rozwijane listy)
+- **< textarea>** / creating description fields
+- **< fieldset>** / framing cell form
+- **< legend>** / describtion of form cell
+- **< label>** / field label for the tag

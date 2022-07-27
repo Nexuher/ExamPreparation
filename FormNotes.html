@@ -1,0 +1,668 @@
+==========================
+FORMULARZE HTML:
+==========================
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formularze HTML</title>	
+<meta charset="utf-8"/>	
+</head>
+<body>
+<br><br><br>
+
+
+<!-- ==================================================================================  -->
+
+
+<p><b>FORMULARZE (form)</b><p>
+Stosowanie formularzy na stronie umożliwia zebranie informacji oraz ułatwia komunikację z użytkownikami.
+Formularz umożliwia wysłanie danych wpisanych przez gościa (użytkownika) strony i wysłanie tych danych na serwer.
+Na pewno wypełniałeś już wiele formularzy na różnych stronach - choćby zakładając konto pocztowe, czy zamawiąjąc książkę w księgarni wysyłkowej. 
+W formularzu mamy wpisać np. imię i nazwisko, adres, wiek, wybrać z listy wykształcenie, wskazać płeć itp. itd.
+Na stronie można umieścić klika formularzy, jednak formularzy nie można zagnieżdżać.<br>
+<br><br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<p><b>STRUKTURA FORMULARZA:</b></p>
+
+<b>form</b> - definiuje formularz służący do gromadzenia danych wejściowych użytkownika.<br>
+<b>input</b> - Pole tekstowe określamy za pomocą input. Jest najważniejszym elementem formularza, może być wyświetlane na kilka sposobów, w zależności od typu atrybutu.<br>
+
+
+<br><p>==================================================================================</p><br>
+
+ 
+<p><b>Różne typy danych wejściowych, których można używać w HTML:</b></p>
+
+<input type="button">         (input type="button")         Definuje przycisk wysyłu nieposiadający atrybutu type<br><br>
+<input type="checkbox">       (input type="checkbox")       Pole wyboru które można zaznaczyć oraz odznaczyć<br><br>
+<input type="color">          (input type="color")          Generuje próbnik kolorów<br><br>
+<input type="date">           (input type="date")           Generuje kalendarz<br><br>
+<input type="datetime">       (input type="datetime")       Generuje kalendarz oraz zegar<br><br>
+<input type="datetime-local"> (input type="datetime-local") Generuje kalendarz oraz zegar, bez etykiety „UTC”
+                                                            po prawej stronie, bez strefy czasowej<br><br>
+<input type="email">          (input type="email")          Mówi przeglądarce, że treść tego pola powinna wyglądać jak adres e-mail<br><br>
+<input type="file">           (input type="file")           Umożliwia przesłanie załącznika (pliku)<br><br>
+<input type="hidden">         (input type="hidden")         Definiuje pole formularza niewidoczne dla osoby wypełniającej,
+                                                            które zostaje przesłane wraz z formularzem <br><br>
+<input type="image">          (input type="image")          Umożliwia przesanie złącznika graficznego<br><br>
+<input type="month">          (input type="month")          Generuje kalendarz ale tylko miesiące<br><br>
+<input type="number">         (input type="number")         Defiunuje pole o wartośći numerycznej<br><br>
+<input type="password">       (input type="password")       Definiuje pole maskowane ukryte typu hasło<br><br>
+<input type="radio">          (input type="radio")          Definiuje przycisk opcji (do wyboru jednej z wielu opcji)<br><br>
+<input type="range">          (input type="range")          Definiuje funkcję suwaka liniowego<br><br>
+<input type="reset">          (input type="reset")          Definiuje przycisk resetu formularza<br><br>
+<input type="search">         (input type="search")         Pole do wpisania szukanego słowa lub frazy<br><br>
+<input type="submit">         (input type="submit")         Definiuje przycisk przesyłania (do przesłania formularza)<br><br>
+<input type="tel">            (input type="tel")            Definiuje pole typu numer telefonu<br><br>
+<input type="text">           (input type="text")           Definiuje jednowierszowe pole wprowadzania tekstu<br><br>
+<input type="time">           (input type="time")           Pozwala użytkownikowi wprowadzić czas w formacie 24-godzinnym<br><br>
+<input type="url">            (input type="url")            Definiuje pole adresu www<br><br>
+<input type="week">           (input type="week")           Generuje kalendarz ale pozwala użytkownikowi wybrać tylko tydzień w roku<br><br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+type - typ pola<br>
+name - nazwa powinna być inna dla każdego pola<br>
+size - rozmiar pola<br>
+maxlength - maksymalna ilość znaków<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<p><b><span style="color:blue;">PRZYKŁADY ZASTOSOWANIA FORMULARZY:</span></b></p>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>1. Jednowierszowe pole wprowadzania tekstu type="text"</b></h3>
+
+<p>Wprowadź dane:</p>
+<form>
+  Imię:<br>
+  <input type="text" name="imie"><br>
+  Nazwisko:<br>
+  <input type="text" name="nazwisko">
+</form>
+<br>
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>2. Wersja pola tekstowego formularza z sugerowaną podpowiedzią (value)</b></h3>
+
+<form>
+Wpisz numer seryjny:  <input type="text" name="serial" value="00-XX-0000-XXXX-EB">
+</form>
+<br>
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>3. Przykład z polem tekstowym długim na 35 z możliwością wpisania ograniczonej ilości znaków (maxlength="5")</b></h3>
+
+<form>
+Podaj pięć dowolnych znaków: 
+<input type="text" name="5_znakow" size="10" maxlength="5" />
+</form>
+<br>
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>4. Grupowanie elementów formularza (fieldset, legend)</b></h3>
+
+<form>
+<fieldset>								              <!-- <fieldset>Jest używany do grupowania danych w formie. -->
+<legend><p>Wprowadź dane:</p></legend>	<!-- <legend>Element definiuje podpis do <fieldset> elementu.-->
+<form>
+  Imię:<br>
+  <input type="text" name="imie"><br>
+  Nazwisko:<br>
+  <input type="text" name="nazwisko">
+</form>
+</fieldset>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>5. Dodawanie etykiet do pół formularza (label)</b></h3>
+
+<label>Wiek:<input type="text" name ="wiek"></label></br>
+
+Język:
+<label><input type="radio" name="jezyk" value="en">angielski</label>
+<label><input type="radio" name="jezyk" value="pl">polski</label>
+<label><input type="radio" name="jezyk" value="de">niemiecki</label> 
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>6. POLE OPCJI</b></h3>
+
+<p>Przyciski opcji pozwalają użytkownikowi wybrać tylko JEDEN z ograniczonej liczby opcji.<br>
+   Pole opcji ustalamy za pomocą typu radio.</p>
+
+
+<h3>Wybierz język:</h3>
+
+<form>
+  <input type="radio" name="jezyk" value="en">angielski<br>
+  <input type="radio" name="jezyk" value="pl">polski<br>
+  <input type="radio" name="jezyk" value="de">niemiecki   
+</form> 
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+<p>Wersja z zastosowaniem atrybutu checked sugerujący automatyczny lub domyślny wybór:</p>
+<h3>Wybierz język:</h3>
+<form>
+  <input type="radio" name="jezyk" value="en">angielski<br>
+  <input type="radio" name="jezyk" value="pl" checked >polski<br>
+  <input type="radio" name="jezyk" value="de">niemiecki  
+</form> 
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+<h3>Wybierz język:</h3>
+<form>
+  <input type="radio" name="jezyk" value="en">angielski
+  <input type="radio" name="jezyk" value="pl" checked >polski
+  <input type="radio" name="jezyk" value="de">niemiecki  
+</form>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>7. POLE WYBORU CHECKBOX:</b></h3>
+
+<p>Gdy zdecydujemy się wybrać nasze przykładowe pole wyboru typu checkbox, wtedy również zawsze możemy cofnąć naszą decyzję.</p>
+
+<form>
+<legend>Zapoznanie się z regulaminem:</legend><br>
+<input type="checkbox" name="auto" value="BMW">akceptuję regulamin<br>
+</form> 
+<br>
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+
+<br><h3><b>POLE WIELOKROTNEGO WYBORU CHECKBOX:</b></h3>
+
+<form>
+<legend>Zaznacz interesujące Cię marki:</legend><br>
+<input type="checkbox" name="auto[]" value="BMW">BMW<br>
+<input type="checkbox" name="auto[]" value="AUDI">AUDI<br>
+<input type="checkbox" name="auto[]" value="MERCEDES">MERCEDES<br>
+<input type="checkbox" name="auto[]" value="SEAT">SEAT
+</form> 
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>8. POLE WYBORU - lista rozwijana:</b></h3>
+
+<form>
+<legend>Zaznacz interesujący Cię samochód:</legend><br>
+  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+</form>
+<br>
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+<p><b>POLE WYBORU - lista rozwijana - zaznaczona sugerowana pozycja:</b></p>
+
+<form>
+<legend>Wybierz język:</legend><br>
+  <select name="jezyk">
+    <option value="en">angielski</option>
+    <option value="de">niemiecki</option>
+    <option value="pl" selected>polski</option>
+    <option value="it">włoski</option>
+  </select>
+</form>
+<br>
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+<p><b>POLE WYBORU - lista rozwijana - datalist</b></p>
+
+<form>
+  <p>
+    <label>
+      Podaj nazwę koloru:
+      <input type="text" name="nazwa-koloru" list="lista-kolorow">
+    </label>
+    <datalist id="lista-kolorow">
+      <option>czerwony</option>
+      <option>zielony</option>
+      <option>niebieski</option>
+      <option>czarny</option>
+      <option>biały</option>
+      <option>żółty</option>
+      <option>pomarańczowy</option>
+      <option>złoty</option>
+      <option>srebrny</option>
+      <option>brązowy</option>
+    </datalist>
+  </p>
+</form>
+
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+
+<p><b>POLE WYBORU - lista przewijana:</b></p>
+
+<form>
+<legend>Wybierz język:</legend><br>
+  <select name="jezyk" size="4">
+    <option value="en">angielski</option>
+    <option value="de">niemiecki</option>
+    <option value="pl">polski</option>
+    <option value="it">włoski</option>
+    <option value="rus">rosyjski</option>
+    <option value="por">portugalski</option>
+  </select>
+</form>
+<br>
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+
+<p><b>POLE WIELOKROTNEGO WYBORU - lista przewijana:</b></p>
+
+<form>
+<legend>Wybierz język:  * w celu dokonania wielokrotnego wyboru należy użyć klawisza Ctrl (windows) / Command (Mac)
+</legend><br>
+  <select name="jezyk[]" size="4" multiple>
+    <option value="en">angielski</option>
+    <option value="de">niemiecki</option>
+    <option value="pl">polski</option>
+    <option value="it">włoski</option>
+    <option value="rus">rosyjski</option>
+    <option value="por">portugalski</option>
+  </select>
+</form>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>9. POLE TEKSTOWE typu wiadomość: </b>(pole ograniczone wizualnie do powierzchni 10 lini oraz 30 znaków w każdej lini)</h3>
+
+<form>
+<textarea name="message" rows="10" cols="30">Wpisz tekst...</textarea>
+</form>
+<br>
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+<br><p>Ten sam przykład tylko opisany za pomocą styli html:</p>
+<form>
+<textarea name="message" style="width:240px; height:140px;">Wpisz tekst...</textarea>
+</form>
+
+<br>
+
+<p>Przykład z czystym polem</p>
+
+Wpisz tekst:
+<form>
+<textarea name="message" style="width:240px; height:140px;"></textarea>
+</form>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>10. POLE TYPU HASŁO:</b> (Znaki w polu hasła są maskowane (wyświetlane jako gwiazdki lub kółka)</h3>
+
+Podaj login:<br>
+<form>
+<input type="text" name="login"><br><br>
+Podaj hasło:<br>
+<input type="password" name="haslo">
+</form>
+
+<br>
+<br>
+
+<em>*</em> Podaj login:<br>
+<form>
+<input type="text" name="login"><br><br>
+<em>*</em> Podaj hasło:<br>
+<input type="password" name="haslo">
+</form>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>11. POLE WYBORU KOLOR </b></h3>
+
+<form>
+<input type="color" name="favcolor" value="#ff0000">
+</form>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>12. POLE WYBORU DATY I CZASU </b></h3><br>
+
+<form>
+Podaj dzień:
+<input type="date" name="bday">
+</form>
+
+<br>
+
+<form>
+Podaj miesiąc i rok:
+<input type="month" name="bdaymonth">
+</form>
+<br>
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+<br><p>Pole wyboru daty z ograniczeniami min i max :</p>
+
+<form>
+  Zaznacz dzień od 10 stycznia 2020r.  <input type="date" name="bday" min="2020-01-10"><br><br>
+  Zaznacz dzień do 10 stycznia 2020r.  <input type="date" name="bday" max="2020-01-10"><br>
+</form>
+<br>
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+<br>Pole wyboru daty z tygodniem: <input type="week">
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+<br>
+
+Pole wyboru godziny: <input type="time">
+
+<br>
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+<br>Pole wyboru godziny:(z ustawionym zakresem od 09:00 do 18:00) <input type="time" name="czas" step="1" min="09:00" max="18:00">
+<br>
+<br>
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+<br><h3><b>13. POLE TYPY NUMER </b></h3>
+
+
+
+Liczba zmiennoprzecinkowa składa się z następujących części, dokładnie w następującej kolejności:<br><br>
+
+1. Opcjonalnie pierwszy znak może być znakiem „ - ”.<br>
+2. Co najmniej jeden znak z zakresu „ 0—9 ”.<br>
+3. Znak „ .”<br>
+4. Co najmniej jeden znak z zakresu „ 0—9 ”<br>
+5. Znak „ e” lub „ E ”<br>
+6. Opcjonalnie znak „ - ” lub „ + ”<br>
+7. Co najmniej jeden znak z zakresu „ 0—9 ”.<br><br>
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+<br><p>Pole typu numer</p>
+<form>
+<input type="number">
+</form>
+<br>
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+<br><p>Pole typu numer zwiekszany o wartość 10 </p>
+<form>
+<input type="number" step="10">
+</form>
+<br>
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+
+
+<br><p>Pole typu numer wybierany w zakresie od 0 do 10</p>
+<form>
+<input type="number"
+       min="0"
+       max="10">
+</form>
+<br>
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+ 
+
+<br><p>Pole typu numer wybierany w zakresie min max (0-10) w krokach co 10</p>
+<form>
+<input type="number"
+       min="0"
+       max="100"
+       step="10">
+</form>
+<br> 
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+ 
+
+<br><p>Pole typu numer wybierany w zakresie min max (0-10) w krokach co 10 z wartością domyślną ustawioną na 50</p>
+<form>
+<input type="number"
+       min="0"
+       max="100"
+       step="10"
+       value="50">
+</form>
+<br>     
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>14. POLE TYPY file (umożliwia załączenie pliku)</b></h3>
+
+<form>
+  Dodaj plik: <input type="file" name="myFile">
+  </form>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>15. POLE ADRESU www</b></h3>
+
+<form>
+  Wpisz adres www:
+  <input type="url" name="homepage">
+  </form>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>16. POLE ADRESU E-mail</b></h3>
+
+  E-mail:
+  <input type="email" name="email">
+  </form>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>17. POLE TYPU TEL które powinny zawierać numer telefonu.</b></h3>
+
+TEL: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+<span>Format: 123-45-678</span>
+</form>
+<br>
+
+
+<br><p>-----------------------------------------------------------------------------------------------------------------------------------</p><br>
+ 
+
+<br>TEL komórkowy: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+<span>Format: 678-678-678</span>
+</form>
+<br>
+<br>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+
+<br><h3><b>18. POLE TYPU ZABLOKOWANEGO </b>pole wejściowe jest tylko do odczytu (nie można zmienić, readonly)</h3>
+
+<form>
+Podaj wartość:<br>
+<form>
+<input type="text" name="firstname" value ="Pole zostało zablokowane" readonly>
+</form>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+
+<br><h3><b>19. POLE TYPU WYŁĄCZONEGO </b>disabled określa, że pole wejściowe jest wyłączone.</h3>
+
+<form>
+Podaj wartość:<br>
+<input type="text" name="firstname" value="Pole zostało wyłączone" disabled>
+</form>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>20. POLE WYSZUKIWANIA</h3>
+
+<br><form role="search">
+   <label for="search">Wyszukiwana fraza</label>
+   <input required type="search" id="search" name="search" />
+   <input type="submit" value="Wyszukaj" />
+</form>
+<br>
+
+
+<br><p>==================================================================================</p><br>
+
+
+<br><h3><b>21. POLE WYPEŁNIANE bez podpowiedzi z zawartości pamięci podręcznej przeglądarki (historii)</h3>
+
+<p> autocomplete="on" - uruchamia pole podpowiedzi, <br> 
+autocomplete="off" odpowiednio przeciwnie wyłącza</p>
+
+<form>
+  <p>
+    <label>
+      Jakie jest Twoje imię?
+      <input type="text" name="imie" autocomplete="off">
+    </label>
+  </p>
+
+  <p>
+    <label>
+      Jaki jest Twój ulubiony kwiat?
+      <input type="text" name="ulubiony-kwiat" autocomplete="off">
+    </label>
+  </p>
+</form>
+
+
+<br><p>==================================================================================</p><br>
+
+<br><h3><b>21. POLE WYPEŁNIANE bez podpowiedzi z zawartości pamięci podręcznej przeglądarki (historii)</h3>
+
+<p>Jeżeli z jakiejś przyczyny chcemy, aby nasz przykładowy formularz HTML posiadał daną, która nie będzie widoczna dla użytkownika wypełniającego nasz przykładowy formularz HTML, wtedy ze wspomnianym formularzem HTML należy powiązać element input posiadający atrybut type o wartości hidden.</p>
+
+<form>
+  <p>
+    <label>
+      Jakie jest Twoje imię?
+      <input type="text" name="imie">
+    </label>
+  </p>
+
+  <p>
+    <label>
+      Jaki jest Twój ulubiony kwiat?
+      <input type="text" name="ulubiony-kwiat">
+    </label>
+  </p>
+
+  <p>
+    <input type="hidden" name="kod-zamówienia" value="1234567890">
+    <button type="submit">zatwierdź</button>
+  </p>
+</form>
+
+<br><br><br><br><br><br>
+</body>
+</html>
