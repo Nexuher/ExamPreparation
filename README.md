@@ -250,3 +250,105 @@ Color models describe specific colour pallets, to default colour pallets in grap
  2. HSL model - Each colour can be described by 3 atributes Shade, Saturation, Brightness.
  3. CMYK model - Colour made from 4 colour Cyan,Magenta,Yellow,Black
  4. HVS model - Colour made from 3 parametres - Hue,Saturation,Value
+ 
+ In HTML documents we can use color notations:
+ - **Verbal**
+ - <body bgcolor= "red"> (inside of website) </ body>
+ -  **Hexadecimal code**
+ -  <body bgcolor= "#FF0000"> (inside of website) </ body>
+ -  **RGB Color**
+ - <body bgcolor= "rgb(255,0,0)"> (inside of website) </ body>
+ - **RGBA code**
+ - < div style="background-color: rgba(0, 255, 0, 0.1)> block stuff </ div>
+ - HSL Code
+ -  < div style="background-color: hsl(0%, 100%, 50%)> block stuff </ div>
+ 
+ # 2.6 Graphics and Multimedias in Websites
+ Static graphic:
+ In order to input a graphic or photo to website we use **< img>**
+
+ **Required parameter inside < img> is scr which shows path to the photo which will open in website after downloading itself.** 
+Other atributes of  img are:
+- **alt** // shows text for people who have troubles with sight or for people whose browser doesn't show graphics
+- **Height** - height of a graphic in pixels
+- **Width** - width of a graphic in pixels
+- **Ismap** - element gives access to server image map
+- usemap - **Assigns the img element to the map element**, the value of the usemap attribute must be the name with the **crosshairs (krzyzykiem) of the map element**
+
+F.e:
+< img  src="C:\X\Y\Photo" alt="Rysunek" width="128"
+height="128">
+Mostly used HTML extensions for static digital graphics to set inside HTML code are:
+- JPG,
+- JPEG
+- PNG
+- ICO
+- APNG
+- GIF
+# Image/Picture map
+On the graphic in webside we can create a **Map of references - create a cross-reference from the selected graphic area.** After hovering mouse over it, on specific area, we can turn on defined reference in code
+
+**Standard mapping looks like this:**
+- < img src="c\x\x.jpeg" usemap="#name">
+- < map name="name"> 
+- < areashape="rect" coords="1,1,50,50" href="index.html">
+- </ map>
+
+Shape atributes:
+- rect - rectangle area
+- circle - circle area
+- poly - poly area
+- default - whole graphic area
+
+Coords define -  defines the cross-reference curve. For each type of area, coords can acquire specific atributes:
+- Rect: 4 values, left, right height, width
+- Circle: 3 values, left, right,  radius of the circle
+-  Poly:  Angle vertices(Wierzchołki kąta) coordinates 
+
+# SVG Container. 
+HTML 5 allows to use tags which dynamically creates in browser graphic defined by < svg> tag. SVG is a language based on XML used to describe 2'd Vector Graphic.
+
+SVG can be put directly in HTML 5 code. < svg> tag defines area where we can put:
+- < rect>
+- < circle>
+- < ellipse>
+- < line>
+- < polyline> 
+- < polygon>
+- < path> 
+
+Basic atributes for < svg> are width and height. 
+
+# Element Canvas
+Other element allowing to draw graphic directly in browser is < canwas>. It definec a container which we can fill with a color, text, other geometric shapes or other graphic photo.
+
+< canvas  id="Rysunek"  width="300"  height="300"  style="border: 1px solid#000000;"> < /canvas>
+
+# Multimedia in websites
+Multimedias represent group of files including audio and video. 
+
+**Mostly used type files for audio:**
+- Wav,
+- Mid,
+- Midi,
+- mp3,
+- ogg,
+
+**Mostly used type files for video and animation:**
+- avi,
+- mpeg,
+- mp4,
+- asf,
+- swf,
+
+Some of these types need special extensions added to browser called a **plug-in or a plug**.
+
+**To add multimedia files on website we use < embed>**. If browser doesn't use embed then we use **< object>**.
+
+To input video, we use < video>. To standard atributes we include:
+- **src** - defines URL path to file
+- **poster** - defines pathway to graphic which will be shown while loading a video.
+- **autoplay** - automatic playback during video loading
+- **controls** - shows display of the control panel
+- **loop** - video playback loop
+# 3 Cascading CSS style sheets
