@@ -352,3 +352,41 @@ To input video, we use < video>. To standard atributes we include:
 - **controls** - shows display of the control panel
 - **loop** - video playback loop
 # 3 Cascading CSS style sheets
+CSS is a language to **create sheets**, a files which helps us to **define features for specific tag i.e. their appearance on the website.** CSS is a powerful tool, it can define multiple layouts at the same time. 
+
+**The use of style sheets has gradually replaced or removed the tags and tag attributes used to format the content of the page**.
+
+HTML is used is used currently to **describe insides of website, but Style sheets are used to define layout of a website.** 
+
+# 3.1 Creation of CSS sheet structure
+Each cascading style sheet **consists of a list of rules specifying how the selected HTML tag or block will be displayed**.
+
+Defining CSS style is subject to a rule in the W3C specification.
+
+The **style** consists of **rules**, and each **rule** consists of a **selector** and a **declaration**, and the **declaration** consists of **properties** to which **certain values are assigned**
+F.e:
+![Anatomy of a CSS Declaration – A CSS Adventure](https://cssworkshop.files.wordpress.com/2015/03/css-declaration.png)
+![Anatomy of a CSS declaration. Inside of a selector class called .selector there is a declaration of background-image: url(‘parchment.jpg’); Arrows label the property (background-image), the function (url), and the argument (parchment.jpg).](https://i2.wp.com/css-tricks.com/wp-content/uploads/2020/04/LV2OI0TM.png?fit=1024%2C333&ssl=1)
+
+**The selector can be a selected element of the page or a group of elements that need to be formatted**.
+# Methods of adding styles in HTML file
+The inline method (typed, local style) **uses the style attribute for the selected HTML language tag.**
+- < p style="text-align: center; color: blue;">
+
+In the embed method in the < head> header (interior style) Style sheet defines in HTML document header **inside < style> </ style> .**
+
+< head>
+< style>
+p {text-align: center; color: blue;}
+</ style>
+< / head>
+
+**Method of linking to an external file (external style):**
+
+Creating external file which includes sets of rules. **File is saved with .css extension and next defines connection by < link> tag in head header** to connect we use: 
+
+< link  rel="stylesheet"  type="text/css"  href="CssFile.css">
+
+**Each browser has its own Style Sheet**, additionally each user can add his own style from Inspector Mode in browser.
+# Cascading style sheets
+Defines the order in which the style is applied, depending on the method of appending its code to the formatted HTML document
